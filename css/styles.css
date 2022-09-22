@@ -761,7 +761,7 @@ button {
   transition: fill var(--animation-time) var(--time-functial);
 }
 
-.client__comment {
+.clientform__comment {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -787,7 +787,7 @@ button {
   border: 1px solid var(--accent-txt-cl);
 }
 
-.modal-checkbox-agreement {
+.clientform__checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -796,10 +796,15 @@ button {
   gap: 7px;
 }
 
-.checkbox-link {
-  color: var(--accent-txt-cl);
+.clientform__modal:checked ~ .clientform__field {
+  background-image: url(../images/checked.svg);
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+  border-color: var(--accent-txt-cl);
 }
-.checkbox-field {
+
+.clientform__field {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -812,20 +817,16 @@ button {
   transition: border-color var(--animation-time) var(--time-functial),
     background-image var(--animation-time) var(--time-functial);
 }
-.checkbox-field:hover,
-.checkbox-field:focus {
+.clientform__field:hover,
+.clientform__field:focus {
   border-color: var(--accent-txt-cl);
 }
 
-.modal-checkbox:checked ~ .checkbox-field {
-  background-image: url(../images/checked.svg);
-  background-size: cover;
-  background-position: center;
-  background-origin: border-box;
-  border-color: var(--accent-txt-cl);
+.clientform__link {
+  color: var(--accent-txt-cl);
 }
 
-.form-btn {
+.clientform__btn {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -852,49 +853,71 @@ button {
 
 /*------------------портфоліо-фільтр--------------*/
 
-.portfolio-button {
+.buttons {
   display: flex;
   gap: 8px;
   margin-bottom: 50px;
   justify-content: center;
 }
+.buttons__item {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 22px;
 
-.portfolio-list {
+  cursor: pointer;
+  border: none;
+  background-color: var(--light-bg-cl);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  color: var(--main-txt-cl);
+  font-family: inherit;
+  letter-spacing: 0.03em;
+
+  transition: color var(--animation-time) var(--time-functial),
+    background-color var(--animation-time) var(--time-functial),
+    box-shadow var(--animation-time) var(--time-functial);
+}
+
+.buttons__item:hover,
+.buttons__item:focus {
+  color: var(--white-txt-cl);
+  background-color: var(--accent-txt-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.works {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.portfolio-item {
+.works__item {
   flex-basis: calc((100% - 30px * 2) / 3);
 }
 
-.picture {
+.works__link {
   text-decoration: none;
   display: block;
 
   transition: box-shadow var(--animation-time) var(--time-functial);
 }
 
-.picture:hover,
-.picture:focus {
+.works__link:hover,
+.works__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.overlay-thumb {
+.works__thumb {
   position: relative;
   overflow: hidden;
 }
-
-.overlay-text {
-  font-family: 'Roboto';
-  font-size: 18px;
-  line-height: calc(28 / 18);
-  color: var(--white-txt-cl);
-}
-
-.overlay {
+.works__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -912,19 +935,30 @@ button {
 
   transition: transform var(--animation-time) var(--time-functial);
 }
-
-.picture:hover .overlay,
-.picture:focus .overlay {
+.works__link:hover .works__overlay,
+.works__link:focus .works__overlay {
   transform: translateY(0);
 }
 
-.about-project {
+.works__text {
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  color: var(--white-txt-cl);
+}
+
+.works__link:hover .overlay,
+.works__link:focus .overlay {
+  transform: translateY(0);
+}
+
+.works__about {
   padding: 20px 24px;
   border: 1px solid var(--light1-cl);
   border-top: none;
 }
 
-.project-name {
+.works__project {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
@@ -932,41 +966,9 @@ button {
   margin-bottom: 4px;
 }
 
-.project-text {
+.works__subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--light-txt-cl);
-}
-
-.button {
-  cursor: pointer;
-  border: none;
-  background-color: var(--light-bg-cl);
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26 / 16);
-  text-align: center;
-  color: var(--main-txt-cl);
-  font-family: inherit;
-  letter-spacing: 0.03em;
-}
-.button {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 22px;
-
-  transition: color var(--animation-time) var(--time-functial),
-    background-color var(--animation-time) var(--time-functial),
-    box-shadow var(--animation-time) var(--time-functial);
-}
-
-.button:hover,
-.button:focus {
-  color: var(--white-txt-cl);
-  background-color: var(--accent-txt-cl);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
