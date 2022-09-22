@@ -97,7 +97,6 @@ address {
 .header {
   border-bottom: 1px solid #ececec;
 }
-
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,7 +126,6 @@ address {
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
 }
-
 .nav__logo {
   font-family: var(--secondary-font);
   font-style: normal;
@@ -155,13 +153,15 @@ address {
 .nav__item {
   position: relative;
 }
+.nav__item .current {
+  color: var(--accent-txt-cl);
+}
 
 .nav__link {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
 .nav__link.current::after {
   content: "";
   display: inline-block;
@@ -172,10 +172,6 @@ address {
   height: 4px;
   background-color: var(--accent-txt-cl);
   border-radius: 2px;
-}
-
-.nav__item .current {
-  color: var(--accent-txt-cl);
 }
 
 .contacts {
@@ -259,7 +255,8 @@ address {
   line-height: 1.7142857143;
   color: var(--transparent-white-cl);
 }
-.address__list:address__link--white {
+
+.address__list.address__link--white {
   color: var(--white-txt-cl);
 }
 
@@ -308,9 +305,8 @@ address {
   -webkit-transition: background-color var(--animation-time) var(--time-functial);
   transition: background-color var(--animation-time) var(--time-functial);
 }
-
 .connections__link.link:hover,
-.connections__link.link:focus {
+.connections__link.link :focus {
   background-color: var(--accent-txt-cl);
 }
 
@@ -352,9 +348,8 @@ address {
   -webkit-transition: border var(--animation-time) var(--time-functial);
   transition: border var(--animation-time) var(--time-functial);
 }
-
 .follow__input:focus,
-.follow__input:hover {
+.follow__input :hover {
   border: 1px solid var(--white-txt-cl);
 }
 
@@ -455,7 +450,6 @@ address {
   -webkit-transition: background-color var(--animation-time) var(--time-functial), fill var(--animation-time) var(--time-functial);
   transition: background-color var(--animation-time) var(--time-functial), fill var(--animation-time) var(--time-functial);
 }
-
 .modal__btn:hover {
   background-color: var(--accent-txt-cl);
   fill: var(--white-bg-cl);
@@ -591,9 +585,8 @@ address {
   -webkit-transition: border-color var(--animation-time) var(--time-functial), background-image var(--animation-time) var(--time-functial);
   transition: border-color var(--animation-time) var(--time-functial), background-image var(--animation-time) var(--time-functial);
 }
-
 .clientform__field:hover,
-.clientform__field:focus {
+.clientform__field :focus {
   border-color: var(--accent-txt-cl);
 }
 
@@ -621,6 +614,8 @@ address {
 }
 
 .hero {
+  background-color: var(--dark-bg-cl);
+  padding: 200px 0;
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -671,7 +666,6 @@ address {
   display: flex;
   gap: 30px;
 }
-
 .benefits__div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -688,14 +682,12 @@ address {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .benefits__subtitle {
   line-height: 1.1428571429;
   text-transform: uppercase;
   font-size: 14px;
   margin-bottom: 10px;
 }
-
 .benefits__text {
   line-height: 1.7142857143;
   color: var(--light-txt-cl);
@@ -704,7 +696,6 @@ address {
 .activities {
   padding-top: 0;
 }
-
 .activities__heading {
   font-weight: 700;
   font-size: 36px;
@@ -713,18 +704,15 @@ address {
   text-align: center;
   margin-bottom: 50px;
 }
-
 .activities__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
-
 .activities__list {
   position: relative;
 }
-
 .activities-text {
   position: absolute;
   bottom: 0;
@@ -749,7 +737,6 @@ address {
 .team {
   background-color: var(--light-bg-cl);
 }
-
 .team__heading {
   font-weight: 700;
   font-size: 36px;
@@ -758,14 +745,12 @@ address {
   text-align: center;
   margin-bottom: 50px;
 }
-
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
-
 .team__item {
   width: 270px;
   background-color: var(--white-bg-cl);
@@ -773,12 +758,10 @@ address {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .team__info {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .team__name {
   font-weight: 500;
   font-size: 16px;
@@ -786,7 +769,6 @@ address {
   text-align: center;
   margin-bottom: 10px;
 }
-
 .team__title {
   font-size: 16px;
   line-height: 1.1875;
@@ -825,9 +807,8 @@ address {
   -webkit-transition: color var(--animation-time) var(--time-functial), background-color var(--animation-time) var(--time-functial);
   transition: color var(--animation-time) var(--time-functial), background-color var(--animation-time) var(--time-functial);
 }
-
 .socials__item:hover,
-.socials__item:focus {
+.socials__item :focus {
   color: var(--white-txt-cl);
   background-color: var(--accent-txt-cl);
 }
@@ -844,12 +825,16 @@ address {
   text-align: center;
   margin-bottom: 50px;
 }
-
 .clients__lists {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+}
+.clients__icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 
 .clients__link {
@@ -870,15 +855,8 @@ address {
   -webkit-transition: color var(--animation-time) var(--time-functial), border var(--animation-time) var(--time-functial);
   transition: color var(--animation-time) var(--time-functial), border var(--animation-time) var(--time-functial);
 }
-
-.clients__icon {
-  width: 106px;
-  height: 60px;
-  fill: currentColor;
-}
-
 .clients__link:hover,
-.clients__link:focus {
+.clients__link :focus {
   border: 1px solid var(--accent-txt-cl);
   color: var(--accent-txt-cl);
 }
@@ -914,9 +892,8 @@ address {
   transition: color var(--animation-time) var(--time-functial), background-color var(--animation-time) var(--time-functial), box-shadow var(--animation-time) var(--time-functial);
   transition: color var(--animation-time) var(--time-functial), background-color var(--animation-time) var(--time-functial), box-shadow var(--animation-time) var(--time-functial), -webkit-box-shadow var(--animation-time) var(--time-functial);
 }
-
 .buttons__item:hover,
-.buttons__item:focus {
+.buttons__item :focus {
   color: var(--white-txt-cl);
   background-color: var(--accent-txt-cl);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -946,11 +923,20 @@ address {
   transition: box-shadow var(--animation-time) var(--time-functial);
   transition: box-shadow var(--animation-time) var(--time-functial), -webkit-box-shadow var(--animation-time) var(--time-functial);
 }
-
 .works__link:hover,
-.works__link:focus {
+.works__link :focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.works__link:hover .works__overlay,
+.works__link :focus .works__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.works__link:hover .overlay,
+.works__link :focus .overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .works__thumb {
@@ -983,23 +969,11 @@ address {
   transition: transform var(--animation-time) var(--time-functial), -webkit-transform var(--animation-time) var(--time-functial);
 }
 
-.works__link:hover .works__overlay,
-.works__link:focus .works__overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .works__text {
   font-family: "Roboto";
   font-size: 18px;
   line-height: 1.5555555556;
   color: var(--white-txt-cl);
-}
-
-.works__link:hover .overlay,
-.works__link:focus .overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .works__about {

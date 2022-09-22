@@ -64,9 +64,10 @@
   transition: background-color var(--animation-time) var(--time-functial),
     fill var(--animation-time) var(--time-functial);
 
-        &:hover {
-             background-color: var(--accent-txt-cl);
-                 fill: var(--white-bg-cl);
+  &:hover {
+    background-color: var(--accent-txt-cl);
+    fill: var(--white-bg-cl);
+  }
 }
 
 // .modal__btn:hover {
@@ -117,25 +118,18 @@
 
   transition: outline-color var(--animation-time) var(--time-functial),
     border var(--animation-time) var(--time-functial);
-
-         &:focus ~ .clientform__icon,:hover ~ .clientform__icon {
-              fill: var(--accent-txt-cl);
-
-         &:focus,:hover {
-                outline-color: var(--accent-txt-cl);
-                border: 1px solid var(--accent-txt-cl);     
 }
 
-// .clientform__input:focus ~ .clientform__icon,
-// .clientform__input:hover ~ .clientform__icon {
-//   fill: var(--accent-txt-cl);
-// }
+.clientform__input:focus ~ .clientform__icon,
+.clientform__input:hover ~ .clientform__icon {
+  fill: var(--accent-txt-cl);
+}
 
-// .clientform__input:focus,
-// .clientform__input:hover {
-//   outline-color: var(--accent-txt-cl);
-//   border: 1px solid var(--accent-txt-cl);
-// }
+.clientform__input:focus,
+.clientform__input:hover {
+  outline-color: var(--accent-txt-cl);
+  border: 1px solid var(--accent-txt-cl);
+}
 
 .clientform__icon {
   position: absolute;
@@ -164,18 +158,14 @@
 
   resize: none;
   transition: outline-color var(--animation-time) var(--time-functial),
-    border var(--animation-time) var(--time-functial);
-
-        &:focus,:hover {
-             outline-color: var(--accent-txt-cl);
-             border: 1px solid var(--accent-txt-cl);
+  border var(--animation-time) var(--time-functial);
 }
 
-// .clientform__texterea:focus,
-// .clientform__texterea:hover {
-//   outline-color: var(--accent-txt-cl);
-//   border: 1px solid var(--accent-txt-cl);
-// }
+.clientform__texterea:focus,
+.clientform__texterea:hover {
+  outline-color: var(--accent-txt-cl);
+  border: 1px solid var(--accent-txt-cl);
+}
 
 .clientform__checkbox {
   display: flex;
@@ -187,7 +177,6 @@
 }
 
 .clientform__modal:checked ~ .clientform__field {
-
   background-image: url(../images/checked.svg);
   background-size: cover;
   background-position: center;
@@ -208,8 +197,10 @@
   transition: border-color var(--animation-time) var(--time-functial),
     background-image var(--animation-time) var(--time-functial);
 
-        &:hover,:focus {
-             border-color: var(--accent-txt-cl);
+  &:hover,
+  :focus {
+    border-color: var(--accent-txt-cl);
+  }
 }
 // .clientform__field:hover,
 // .clientform__field:focus {

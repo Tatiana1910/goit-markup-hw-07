@@ -1,46 +1,47 @@
 .team {
   background-color: var(--light-bg-cl);
-}
 
-.team__heading {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  color: var(--main-txt-cl);
-  text-align: center;
-  margin-bottom: 50px;
-}
+  &__heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    color: var(--main-txt-cl);
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
-.team__list {
-  display: flex;
-  gap: 30px;
-}
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
 
-.team__item {
-  width: 270px;
-  background-color: var(--white-bg-cl);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
+  &__item {
+    width: 270px;
+    background-color: var(--white-bg-cl);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
 
-.team__info {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+  &__info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
-.team__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  text-align: center;
-  margin-bottom: 10px;
-}
-.team__title {
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  text-align: center;
-  color: var(--light-txt-cl);
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    color: var(--light-txt-cl);
+  }
 }
 
 .socials {
@@ -63,12 +64,12 @@
 .socials__item {
   transition: color var(--animation-time) var(--time-functial),
     background-color var(--animation-time) var(--time-functial);
-}
 
-.socials__item:hover,
-.socials__item:focus {
-  color: var(--white-txt-cl);
-  background-color: var(--accent-txt-cl);
+  &:hover,
+  :focus {
+    color: var(--white-txt-cl);
+    background-color: var(--accent-txt-cl);
+  }
 }
 
 .socials__icon {
