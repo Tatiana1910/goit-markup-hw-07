@@ -1,29 +1,27 @@
-:root {
-  /*Fonts*/
+/* :root {
+
   --main-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
-  /* Text colors*/
+
+  
   --main-txt-cl: #212121;
   --light-txt-cl: #757575;
   --accent-txt-cl: #2196f3;
   --white-txt-cl: #ffffff;
 
-  /*Background  colors*/
   --dark-bg-cl: #2f303a;
   --light-bg-cl: #f5f4fa;
   --white-bg-cl: #ffffff;
 
-  /*other*/
   --light1-cl: #eeeeee;
   --light2-cl: #ececec;
   --black-cl: #000000;
   --transparent-white-cl: rgba(255, 255, 255, 0.6);
 
-  /*animation*/
 
   --animation-time: 250ms;
   --time-functial: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /**
   |============================
@@ -31,9 +29,7 @@
   |============================
 */
 
-/*Хедер*/
-
-body {
+/* body {
   color: var(--main-txt-cl);
   font-family: var(--main-font);
   background-color: var(--white-bg-cl);
@@ -56,30 +52,31 @@ img {
   width: 100%;
   height: auto;
 }
-
-address {
-  font-style: normal;
-}
 button {
   display: block;
   cursor: pointer;
   border: none;
   border-radius: 4px;
-}
-.section {
+} */
+
+/* address {
+  font-style: normal;
+} */
+
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
-.container {
+/* .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
-.list {
+/* .list {
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -88,9 +85,9 @@ button {
 .link {
   text-decoration: none;
   color: currentColor;
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -102,7 +99,7 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /**
   |============================
@@ -110,7 +107,7 @@ button {
   |============================
 */
 
-.header {
+/* .header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -209,7 +206,7 @@ button {
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
-}
+} */
 
 /*
   |============================
@@ -219,13 +216,13 @@ button {
 
 /*-------------------замовити послугу---------------*/
 
-.hero {
+/* .hero {
   background-color: var(--dark-bg-cl);
   padding: 200px 0;
-}
+} */
 
 /*------------------------------OVERLAY----------------------*/
-.hero {
+/* .hero {
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -264,11 +261,11 @@ button {
   cursor: pointer;
   padding: 10px 32px;
   margin: 0 auto;
-}
+} */
 
 /*------------------особливості-------------------------*/
 
-.benefits__list {
+/* .benefits__list {
   display: flex;
   gap: 30px;
 }
@@ -294,11 +291,11 @@ button {
 .benefits__text {
   line-height: calc(24 / 14);
   color: var(--light-txt-cl);
-}
+} */
 
 /*-----------------чим ми займаємось-----------*/
 
-.activities {
+/* .activities {
   padding-top: 0;
 }
 
@@ -337,11 +334,11 @@ button {
   height: 70px;
 
   background-color: rgba(47, 48, 58, 0.8);
-}
+} */
 
 /*----------------Наша команда---------------------*/
 
-.team {
+/* .team {
   background-color: var(--light-bg-cl);
 }
 
@@ -416,10 +413,10 @@ button {
 
 .socials__icon {
   fill: currentColor;
-}
+} */
 
 /*-------------------------Постійні клієнти----------------*/
-.clients__heading {
+/* .clients__heading {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -457,14 +454,14 @@ button {
 .clients__link:focus {
   border: 1px solid var(--accent-txt-cl);
   color: var(--accent-txt-cl);
-}
+} */
 
 /**
   |============================
   | Footer
   |============================
 */
-.footer {
+/* .footer {
   background-color: var(--dark-bg-cl);
   padding: 60px 0;
 }
@@ -615,7 +612,7 @@ button {
 .follow__icon {
   fill: var(--white-bg-cl);
   margin-left: 10px;
-}
+} */
 
 /*
   |============================
@@ -623,7 +620,7 @@ button {
   |============================
 */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
 
   top: 0;
@@ -642,7 +639,7 @@ button {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  /* visibility: hidden; */
+ 
 }
 
 .backdrop.is-hidden.modal {
@@ -694,8 +691,6 @@ button {
   background-color: var(--accent-txt-cl);
   fill: var(--white-bg-cl);
 }
-
-/*--------------------------------------*/
 
 .clientform__title {
   font-weight: 700;
@@ -842,7 +837,7 @@ button {
 
   color: var(--white-txt-cl);
   background-color: var(--accent-txt-cl);
-}
+} */
 
 /*
   |============================
@@ -853,7 +848,7 @@ button {
 
 /*------------------портфоліо-фільтр--------------*/
 
-.buttons {
+/* .buttons {
   display: flex;
   gap: 8px;
   margin-bottom: 50px;
@@ -971,4 +966,4 @@ button {
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--light-txt-cl);
-}
+} */
