@@ -118,18 +118,29 @@
 
   transition: outline-color var(--animation-time) var(--time-functial),
     border var(--animation-time) var(--time-functial);
+
+  :focus ~ .clientform__icon,
+  :hover ~ .clientform__icon {
+    fill: var(--accent-txt-cl);
+  }
+
+  :focus,
+  :hover {
+    outline-color: var(--accent-txt-cl);
+    border: 1px solid var(--accent-txt-cl);
+  }
 }
 
-.clientform__input:focus ~ .clientform__icon,
-.clientform__input:hover ~ .clientform__icon {
-  fill: var(--accent-txt-cl);
-}
+// .clientform__input:focus ~ .clientform__icon,
+// .clientform__input:hover ~ .clientform__icon {
+//   fill: var(--accent-txt-cl);
+// }
 
-.clientform__input:focus,
-.clientform__input:hover {
-  outline-color: var(--accent-txt-cl);
-  border: 1px solid var(--accent-txt-cl);
-}
+// .clientform__input:focus,
+// .clientform__input:hover {
+//   outline-color: var(--accent-txt-cl);
+//   border: 1px solid var(--accent-txt-cl);
+// }
 
 .clientform__icon {
   position: absolute;
@@ -158,14 +169,20 @@
 
   resize: none;
   transition: outline-color var(--animation-time) var(--time-functial),
-  border var(--animation-time) var(--time-functial);
+    border var(--animation-time) var(--time-functial);
+
+  &:focus,
+  :hover {
+    outline-color: var(--accent-txt-cl);
+    border: 1px solid var(--accent-txt-cl);
+  }
 }
 
-.clientform__texterea:focus,
-.clientform__texterea:hover {
-  outline-color: var(--accent-txt-cl);
-  border: 1px solid var(--accent-txt-cl);
-}
+// .clientform__texterea:focus,
+// .clientform__texterea:hover {
+//   outline-color: var(--accent-txt-cl);
+//   border: 1px solid var(--accent-txt-cl);
+// }
 
 .clientform__checkbox {
   display: flex;
