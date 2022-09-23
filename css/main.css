@@ -26,7 +26,7 @@
   padding-bottom: 94px;
 }
 
-.portfolio__container, .clients__container, .team-container, .activities__container, .benefits__container, .footer__container, .header__container {
+.portfolio__container, .clients__container, .team-container, .activities__container, .benefits__container, .hero__container, .footer__container, .header__container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -619,7 +619,6 @@ address {
   background-position: center;
   background-size: cover;
 }
-
 .hero__title {
   font-weight: 900;
   font-size: 44px;
