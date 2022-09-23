@@ -1,4 +1,10 @@
+.clients__container {
+  @extend %container;
+}
+
 .clients {
+  @extend %section;
+
   &__heading {
     font-weight: 700;
     font-size: 36px;

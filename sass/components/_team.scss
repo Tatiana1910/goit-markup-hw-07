@@ -1,4 +1,9 @@
+.team-container {
+  @extend %container;
+}
 .team {
+  @extend %section;
+
   background-color: var(--light-bg-cl);
 
   &__heading {

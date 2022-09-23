@@ -1,3 +1,9 @@
+.portfolio {
+  @extend %section;
+}
+.portfolio__container {
+  @extend %container;
+}
 .buttons {
   display: flex;
   gap: 8px;
@@ -70,7 +76,7 @@
   :focus .works__overlay {
     transform: translateY(0);
   }
-  
+
   &:hover .overlay,
   :focus .overlay {
     transform: translateY(0);

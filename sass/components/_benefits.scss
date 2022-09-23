@@ -1,4 +1,9 @@
+.benefits__container {
+  @extend %container;
+}
 .benefits {
+  @extend %section;
+
   &__list {
     display: flex;
     gap: 30px;

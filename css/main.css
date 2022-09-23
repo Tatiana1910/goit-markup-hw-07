@@ -21,6 +21,17 @@
   --time-functial: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio, .clients, .team, .activities, .benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio__container, .clients__container, .team-container, .activities__container, .benefits__container, .footer__container, .header__container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 body {
   color: var(--main-txt-cl);
   font-family: var(--main-font);
@@ -63,11 +74,6 @@ button {
   color: currentColor;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 address {
   font-style: normal;
 }
@@ -84,14 +90,6 @@ address {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .header {
@@ -215,15 +213,6 @@ address {
   background-color: var(--dark-bg-cl);
   padding: 60px 0;
 }
-
-.footer .link {
-  -webkit-transition: color var(--animation-time) var(--time-functial);
-  transition: color var(--animation-time) var(--time-functial);
-}
-.footer .link:hover, .footer .link:focus {
-  color: var(--accent-txt-cl);
-}
-
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,6 +220,14 @@ address {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.footer .link {
+  -webkit-transition: color var(--animation-time) var(--time-functial);
+  transition: color var(--animation-time) var(--time-functial);
+}
+.footer .link:hover, .footer .link:focus {
+  color: var(--accent-txt-cl);
 }
 
 .footer__address {
@@ -248,15 +245,13 @@ address {
 .address {
   margin-top: 20px;
 }
-
 .address__list {
   font-family: "Roboto";
   font-style: normal;
   line-height: 1.7142857143;
   color: var(--transparent-white-cl);
 }
-
-.address__list.address__link--white {
+.address__link--white {
   color: var(--white-txt-cl);
 }
 
@@ -348,8 +343,9 @@ address {
   -webkit-transition: border var(--animation-time) var(--time-functial);
   transition: border var(--animation-time) var(--time-functial);
 }
+
 .follow__input:focus,
-.follow__input :hover {
+.follow__input:hover {
   border: 1px solid var(--white-txt-cl);
 }
 
@@ -499,14 +495,12 @@ address {
   -webkit-transition: outline-color var(--animation-time) var(--time-functial), border var(--animation-time) var(--time-functial);
   transition: outline-color var(--animation-time) var(--time-functial), border var(--animation-time) var(--time-functial);
 }
-
-.clientform__input:focus ~ .clientform__icon,
-.clientform__input:hover ~ .clientform__icon {
+.clientform__input :focus ~ .clientform__icon,
+.clientform__input :hover ~ .clientform__icon {
   fill: var(--accent-txt-cl);
 }
-
-.clientform__input:focus,
-.clientform__input:hover {
+.clientform__input :focus,
+.clientform__input :hover {
   outline-color: var(--accent-txt-cl);
   border: 1px solid var(--accent-txt-cl);
 }
@@ -544,9 +538,8 @@ address {
   -webkit-transition: outline-color var(--animation-time) var(--time-functial), border var(--animation-time) var(--time-functial);
   transition: outline-color var(--animation-time) var(--time-functial), border var(--animation-time) var(--time-functial);
 }
-
 .clientform__texterea:focus,
-.clientform__texterea:hover {
+.clientform__texterea :hover {
   outline-color: var(--accent-txt-cl);
   border: 1px solid var(--accent-txt-cl);
 }

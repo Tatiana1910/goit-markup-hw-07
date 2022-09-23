@@ -1,6 +1,13 @@
 .footer {
   background-color: var(--dark-bg-cl);
   padding: 60px 0;
+
+  &__container {
+    @extend %container;
+
+    display: flex;
+    align-items: baseline;
+  }
 }
 .footer .link {
   transition: color var(--animation-time) var(--time-functial);
@@ -13,11 +20,6 @@
 // .footer .link:focus {
 //   color: var(--accent-txt-cl);
 // }
-
-.footer__container {
-  display: flex;
-  align-items: baseline;
-}
 
 .footer__address {
   margin-right: 70px;
@@ -32,16 +34,17 @@
 
 .address {
   margin-top: 20px;
-}
 
-.address__list {
-  font-family: 'Roboto';
-  font-style: normal;
-  line-height: calc(24 / 14);
-  color: var(--transparent-white-cl);
-}
-.address__list.address__link--white {
-  color: var(--white-txt-cl);
+  &__list {
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: calc(24 / 14);
+    color: var(--transparent-white-cl);
+  }
+
+  &__link--white {
+    color: var(--white-txt-cl);
+  }
 }
 
 .address__item {
@@ -128,17 +131,12 @@
   outline: transparent;
   color: var(--white-txt-cl);
   transition: border var(--animation-time) var(--time-functial);
-
-  &:focus,
-  :hover {
-    border: 1px solid var(--white-txt-cl);
-  }
 }
 
-// .follow__input:focus,
-// .follow__input:hover {
-//   border: 1px solid var(--white-txt-cl);
-// }
+.follow__input:focus,
+.follow__input:hover {
+  border: 1px solid var(--white-txt-cl);
+}
 
 .follow__btn {
   width: 200px;

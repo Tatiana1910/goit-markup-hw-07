@@ -1,4 +1,8 @@
+.activities__container {
+  @extend %container;
+}
 .activities {
+  @extend %section;
   padding-top: 0;
 
   &__heading {
