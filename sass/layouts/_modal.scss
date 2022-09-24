@@ -119,13 +119,13 @@
   transition: outline-color var(--animation-time) var(--time-functial),
     border var(--animation-time) var(--time-functial);
 
-  :focus ~ .clientform__icon,
-  :hover ~ .clientform__icon {
+  &:focus ~ .clientform__icon,
+  &:hover ~ .clientform__icon {
     fill: var(--accent-txt-cl);
   }
 
-  :focus,
-  :hover {
+  &:focus,
+  &:hover {
     outline-color: var(--accent-txt-cl);
     border: 1px solid var(--accent-txt-cl);
   }
@@ -172,7 +172,7 @@
     border var(--animation-time) var(--time-functial);
 
   &:focus,
-  :hover {
+  &:hover {
     outline-color: var(--accent-txt-cl);
     border: 1px solid var(--accent-txt-cl);
   }
@@ -215,7 +215,7 @@
     background-image var(--animation-time) var(--time-functial);
 
   &:hover,
-  :focus {
+  &:focus {
     border-color: var(--accent-txt-cl);
   }
 }

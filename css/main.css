@@ -300,8 +300,7 @@ address {
   -webkit-transition: background-color var(--animation-time) var(--time-functial);
   transition: background-color var(--animation-time) var(--time-functial);
 }
-.connections__link.link:hover,
-.connections__link.link :focus {
+.connections__link.link:hover, .connections__link.link:focus {
   background-color: var(--accent-txt-cl);
 }
 
@@ -343,9 +342,7 @@ address {
   -webkit-transition: border var(--animation-time) var(--time-functial);
   transition: border var(--animation-time) var(--time-functial);
 }
-
-.follow__input:focus,
-.follow__input:hover {
+.follow__input:focus, .follow__input:hover {
   border: 1px solid var(--white-txt-cl);
 }
 
@@ -495,12 +492,10 @@ address {
   -webkit-transition: outline-color var(--animation-time) var(--time-functial), border var(--animation-time) var(--time-functial);
   transition: outline-color var(--animation-time) var(--time-functial), border var(--animation-time) var(--time-functial);
 }
-.clientform__input :focus ~ .clientform__icon,
-.clientform__input :hover ~ .clientform__icon {
+.clientform__input:focus ~ .clientform__icon, .clientform__input:hover ~ .clientform__icon {
   fill: var(--accent-txt-cl);
 }
-.clientform__input :focus,
-.clientform__input :hover {
+.clientform__input:focus, .clientform__input:hover {
   outline-color: var(--accent-txt-cl);
   border: 1px solid var(--accent-txt-cl);
 }
@@ -538,8 +533,7 @@ address {
   -webkit-transition: outline-color var(--animation-time) var(--time-functial), border var(--animation-time) var(--time-functial);
   transition: outline-color var(--animation-time) var(--time-functial), border var(--animation-time) var(--time-functial);
 }
-.clientform__texterea:focus,
-.clientform__texterea :hover {
+.clientform__texterea:focus, .clientform__texterea:hover {
   outline-color: var(--accent-txt-cl);
   border: 1px solid var(--accent-txt-cl);
 }
@@ -578,8 +572,7 @@ address {
   -webkit-transition: border-color var(--animation-time) var(--time-functial), background-image var(--animation-time) var(--time-functial);
   transition: border-color var(--animation-time) var(--time-functial), background-image var(--animation-time) var(--time-functial);
 }
-.clientform__field:hover,
-.clientform__field :focus {
+.clientform__field:hover, .clientform__field:focus {
   border-color: var(--accent-txt-cl);
 }
 
@@ -884,8 +877,7 @@ address {
   transition: color var(--animation-time) var(--time-functial), background-color var(--animation-time) var(--time-functial), box-shadow var(--animation-time) var(--time-functial);
   transition: color var(--animation-time) var(--time-functial), background-color var(--animation-time) var(--time-functial), box-shadow var(--animation-time) var(--time-functial), -webkit-box-shadow var(--animation-time) var(--time-functial);
 }
-.buttons__item:hover,
-.buttons__item :focus {
+.buttons__item:hover, .buttons__item:focus {
   color: var(--white-txt-cl);
   background-color: var(--accent-txt-cl);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);

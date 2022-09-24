@@ -89,7 +89,7 @@
   transition: background-color var(--animation-time) var(--time-functial);
 
   &:hover,
-  :focus {
+  &:focus {
     background-color: var(--accent-txt-cl);
   }
 }
@@ -131,12 +131,17 @@
   outline: transparent;
   color: var(--white-txt-cl);
   transition: border var(--animation-time) var(--time-functial);
+
+  &:focus,
+  &:hover {
+    border: 1px solid var(--white-txt-cl);
+  }
 }
 
-.follow__input:focus,
-.follow__input:hover {
-  border: 1px solid var(--white-txt-cl);
-}
+// .follow__input:focus,
+// .follow__input:hover {
+//   border: 1px solid var(--white-txt-cl);
+// }
 
 .follow__btn {
   width: 200px;
